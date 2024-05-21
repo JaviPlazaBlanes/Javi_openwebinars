@@ -1,0 +1,6 @@
+codigo inputbox:
+Public Sub Futbol()
+    Dim EquipoFutbol As String
+    EquipoFutbol = InputBox("¿Cual es tu equipo favorito?", "Bienvenido/a")
+    ActiveCell.Value = "¡Equipazo! " & EquipoFutbol
+End Sub

@@ -1,0 +1,10 @@
+codigo MsgBox: 
+Public Sub Ánimo()
+    Dim resp As Integer
+    resp = MsgBox("¿Os encontráis bien actualmente los de SMX2A?", 20, "Aviso")
+    If resp = 6 Then
+            MsgBox ("Me alegro mucho")
+    Else
+            MsgBox ("Si necesitáis ayuda contactarme a este correo javier.plaza@insbaixcamp.cat y os ayudaré en lo que necesiteis.")
+    End If
+End Sub

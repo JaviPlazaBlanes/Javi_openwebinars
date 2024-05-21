@@ -1,0 +1,16 @@
+codigo funcion excel: 
+Public Function notas(nota)
+    If nota >= 9 Then
+        notas = "Excelente"
+        ElseIf nota >= 7 Then
+            notas = "Notable"
+            ElseIf nota >= 6 Then
+                notas = "Bien"
+                ElseIf nota >= 5 Then
+                    notas = "Suficiente"
+                    ElseIf nota >= 3.5 Then
+                        notas = "Insuficiente"
+        Else
+            notas = "Muy muy mal"
+        End If
+End Function
