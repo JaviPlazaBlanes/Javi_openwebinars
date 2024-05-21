@@ -1,0 +1,21 @@
+codigo outlook:
+Public Sub correo()
+    
+    Dim objoutlook As Outlook.Application
+    Dim objmailitem As Outlook.MailItem
+    Dim otlNs As Outlook.Namespace
+    
+    Set objoutlook = New Outlook.Application
+    Set otlNs = objoutlook.GetNamespace("MAPI")
+    otlNs.Logon
+    Set objmailitem = objoutlook.CreateItem(olMailItem)
+    objmailitem.To = "midireccion@aa.es"
+    objmailitem.BCC = acu
+    objmailitem.Subject = "Prueba"
+    objmailitem.Body = "Hola chavales"
+    objmailitem.Send
+    Set objmailitem = Nothing
+    otlNs.Logoff
+    Set objoutlook = Nothing
+    
+End Sub
